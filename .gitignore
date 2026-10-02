@@ -1,0 +1,102 @@
+# ============================================================
+# ARANYA - AI Forest Network Guardian
+# Git Ignore Rules
+# ============================================================
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+
+# -------------------------
+# Virtual environments
+# -------------------------
+aranya_env/
+venv/
+env/
+.venv/
+
+# -------------------------
+# Environment / secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+
+secrets.h
+secrets.json
+credentials.json
+
+# -------------------------
+# YOLO / Ultralytics
+# -------------------------
+runs/
+
+# Training outputs
+05_training/*/weights/
+05_training/*/results.csv
+05_training/*/*.png
+05_training/*/*.jpg
+05_training/*/*.jpeg
+
+# Model files
+*.pt
+*.onnx
+*.engine
+*.tflite
+
+# -------------------------
+# Raw datasets
+# -------------------------
+01_raw_datasets/
+02_negative_images/
+
+# -------------------------
+# Generated YOLO dataset
+# -------------------------
+04_yolo_dataset/images/
+04_yolo_dataset/labels/
+
+# -------------------------
+# Test media
+# -------------------------
+07_test_media/images/
+07_test_media/videos/
+
+# -------------------------
+# Live detection outputs
+# -------------------------
+09_live_detection/outputs/
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+
+# -------------------------
+# Temporary files
+# -------------------------
+temp/
+tmp/
+*.tmp
+
+# -------------------------
+# Operating system
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# IDE
+# -------------------------
+.vscode/
+.idea/
+
+# -------------------------
+# Python notebooks
+# -------------------------
+.ipynb_checkpoints/
